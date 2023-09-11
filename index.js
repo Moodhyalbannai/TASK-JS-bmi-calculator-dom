@@ -12,44 +12,29 @@ let unit = height * 0.01
 height = unit
   let BMI = weight / height**2
 
- let Underweight = "Not Healthy"
- 
 
 
-if(BMI < 18.5) {
-  alert(BMI + `
-  Underweight!`)
-} else if (BMI >= 18.5 && BMI <= 24.9){
-  alert(BMI + `
-  Healthy Weight`)
-} else if (BMI >= 25.0 && BMI <= 29.9){
-  alert(BMI + `
-  Overweight`)
-} else if (BMI >= 30.0){
-  alert(BMI + `
-  Above Obesity!`)
-};
 
 
-if(age >= 19 && age <= 24){
-  alert(`Your BMI is ` + BMI + `
-  Healthy Weight` + `
-  Not Healthy :(`)
-} else if (age >= 25 && age <= 34){
-alert(`BMI is = ` + BMI + `
-Healthy Weight` + `
-Healthy`)
-} else if (age >= 35 && age <= 44){
-  alert(`BMI is = ` + BMI + `
-  Healthy Weight` + `
-  Healthy! :)`)
-} else if (age >= 45 && age <= 54){
-  alert(`BMI is = ` + BMI + `
-  Over Weight` + `
-  Not Healthy! :(`)  
-} else if (age >= 55 && age <= 64){
-  alert(`BMI is = ` + BMI + `
-  Over Weight` + `
-  Not Healthy! :(`)  
+if (age >= 19 && age <= 24 && BMI >= 19 && BMI <= 24) {
+  alert(` Your BMI is ${BMI}
+  you are HEALTHY! :)`);
+} else if (age >= 25 && age <= 34 && BMI >= 20 && BMI <= 25) {
+  alert(` Your BMI is ${BMI}
+  you are HEALTHY! :)`);
+} else if (age >= 45 && age <= 54 && BMI >= 22 && BMI <= 27) {
+  alert(` Your BMI is ${BMI}
+  you are HEALTHY! :)`);
+} else if (age >= 55 && age <= 64 && BMI >= 23 && BMI <= 28) {
+  alert(` Your BMI is ${BMI}
+  you are HEALTHY! :)`);
+} else if (age >= 65 && BMI >= 24 && BMI <= 29) {
+  alert(` Your BMI is ${BMI}
+  you are HEALTHY! :)`);
+} else {
+  alert(` Your BMI is ${BMI}
+  you are NOT HEALTHY! :(`);
+}
+
 
 }
